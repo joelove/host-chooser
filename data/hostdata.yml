@@ -1,0 +1,169 @@
+---
+- :desc: ''
+  :name: ''
+  :ip: ''
+- :desc: Rackspace Production
+  :name: PROD
+  :ip: 92.52.123.97
+- :desc: 257895-wol-app1.which.co.uk
+  :name: PRODWolApp1
+  :ip: 172.16.0.75
+- :desc: 257903-wol-app2.which.co.uk
+  :name: PRODWolApp2
+  :ip: 172.16.0.76
+- :desc: 257904-wol-app3.which.co.uk
+  :name: PRODWolApp3
+  :ip: 172.16.0.77
+- :desc: 257905-wol-app4.which.co.uk
+  :name: PRODWolApp4
+  :ip: 172.16.0.78
+- :desc: 320881-wol-app5.which.co.uk
+  :name: PRODWolApp5
+  :ip: 172.16.0.114
+- :desc: 320882-wol-app6.which.co.uk
+  :name: PRODWolApp6
+  :ip: 172.16.0.115
+- :desc: 326314-wol-app7.which.co.uk
+  :name: PRODWolApp7
+  :ip: 172.16.0.119
+- :desc: 326316-wol-app8.which.co.uk
+  :name: PRODWolApp8
+  :ip: 172.16.0.120
+- :desc: 257910-wol-xml1.which.co.uk
+  :name: PRODWolXml1
+  :ip: 172.16.0.83
+- :desc: Rackspace Pre-production
+  :name: PreProd
+  :ip: 92.52.123.98
+- :desc: Rackspace Disaster Recovery
+  :name: DR
+  :ip: 172.17.0.242
+- :desc: Q.A. Environment
+  :name: QA
+  :ip: 143.41.128.99
+- :desc: VT1 (3.3)
+  :name: VT1
+  :ip: 143.41.134.193
+- :desc: Stream0 - Test A
+  :name: VT0A
+  :ip: 143.41.136.166
+- :desc: Stream1 - Dev A
+  :name: VD1A
+  :ip: 143.41.136.163
+- :desc: Stream1 - Dev B
+  :name: VD1B
+  :ip: 143.41.136.102
+- :desc: Stream1 - Test A
+  :name: VT1A
+  :ip: 143.41.136.164
+- :desc: Stream1 - Test A - 2
+  :name: VT1A-2
+  :ip: 143.41.136.195
+- :desc: Stream2 - Dev A
+  :name: VD2A
+  :ip: 143.41.136.121
+- :desc: Stream2 - Dev B
+  :name: VD2B
+  :ip: 143.41.136.147
+- :desc: Stream2 - Test A
+  :name: VT2A
+  :ip: 143.41.136.153
+- :desc: Stream3 - Dev A
+  :name: VD3A
+  :ip: 143.41.136.127
+- :desc: Stream3 - Dev B
+  :name: VD3B
+  :ip: 143.41.136.171
+- :desc: Stream3 - Test A
+  :name: VT3A
+  :ip: 143.41.136.165
+- :desc: Stream4 - Test A
+  :name: VT4A
+  :ip: 143.41.136.246
+- :desc: Homepage - Rails Version
+  :name: dmrrubl4
+  :ip: 143.41.136.89
+- :desc: Integration
+  :name: INT
+  :ip: 143.41.136.211
+- :desc: IntNode1 VM
+  :name: INT1
+  :ip: 143.41.136.170
+- :desc: IntNode2 VM
+  :name: INT2
+  :ip: 143.41.136.168
+- :desc: VDC1
+  :name: VDC1
+  :ip: 143.41.136.213
+- :desc: VDC1Node1 VM
+  :name: VDC1-1
+  :ip: 143.41.136.189
+- :desc: VDC1Node2 VM
+  :name: VDC1-2
+  :ip: 143.41.136.190
+- :desc: VDC2
+  :name: VDC2
+  :ip: 143.41.136.215
+- :desc: VDC2Node1 VM
+  :name: VDC2-1
+  :ip: 143.41.136.192
+- :desc: VDC2Node2 VM
+  :name: VDC2-2
+  :ip: 143.41.136.191
+- :desc: Service Delivery VM
+  :name: SD
+  :ip: 143.41.136.116
+- :desc: Homepage Test
+  :name: Homepage
+  :ip: 162.13.43.19
+- :desc: Homepage Staging
+  :name: Homepage
+  :ip: 162.13.86.16
+- :desc: Homepage-wol-dev
+  :name: Homepage WOL dev
+  :ip: 37.188.117.194
+- :desc: tt-wol-test
+  :name: Trusted Trader
+  :ip: 162.13.89.124
+- :desc: tt-wol-dev
+  :name: Trusted Trader WOL dev
+  :ip: 162.13.121.190
+- :desc: CMS VM (Struan/Mark)
+  :name: CMS
+  :ip: 143.41.136.173
+- :desc: ca-wol-test
+  :name: ca-wol-test
+  :ip: 37.188.117.245
+- :desc: ga-wol-dev
+  :name: ga-wol-dev
+  :ip: 162.13.2.229
+- :desc: ga-wol-test
+  :name: ga-wol-test
+  :ip: 162.13.124.209
+- :desc: ga2-wol-test
+  :name: ga2-wol-test
+  :ip: 162.13.15.52
+- :desc: ga-wol-uat
+  :name: ga-wol-uat
+  :ip: 162.13.14.66
+- :desc: sashimi-wol-dev
+  :name: sashimi-wol-dev
+  :ip: 95.138.163.112
+- :desc: ra-wol-dev
+  :name: ra-wol-dev
+  :ip: 162.13.122.68
+- :desc: ra-wol-test
+  :name: ra-wol-test
+  :ip: 162.13.146.104
+- :desc: cr-wol-dev
+  :name: cr-wol-dev
+  :ip: 162.13.84.137
+- :desc: cr-wol-test
+  :name: cr-wol-test
+  :ip: 162.13.85.201
+- :desc: Your local machine
+  :name: LOCALHOST
+  :ip: 127.0.0.1
+- :desc: Do not set
+  :name: NONE
+  :ip: '#'
