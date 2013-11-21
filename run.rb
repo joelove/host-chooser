@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'pp'
 require 'yaml'
 require 'xpath'
+require 'watir-webdriver'
 
 $options = OpenStruct.new;
 
@@ -44,6 +45,13 @@ def string_compare(str1, str2)
     end 
   end 
   (2.0 * intersection) / union
+end
+
+def clear_cache_chrome()
+  @browser = Watir::Browser.new:chrome
+  @browser.goto 'chrome://net-internals/#dns'
+  @browser.input(:id => "dns-view-clear-cache").when_present.click
+  @browser.close
 end
 
 class String
@@ -115,7 +123,6 @@ class Hostdata
     hostdata
     # Socket.do_not_reverse_lookup = false
     # hostdata.each do |detail|
-    #   puts details.to_s
     #   addrinfo = Socket.getaddrinfo(detail[:ip], nil)
     #   hostname = addrinfo[0][2]
     #   case
@@ -166,6 +173,9 @@ class Hostsfile
       target.write(line)
     end
     target.close()
+    cmd = 'dscacheutil -flushcache'
+    system(cmd)
+    # clear_cache_chrome
   end
 
   def parse_file(lines)
@@ -194,7 +204,7 @@ class Environment
     hostsfile.write_file(file_contents, filename)
 
     env = match(@current, hostdata);
-    output = "Switched to #{env_data[:name]} (#{env_data[:desc]})"
+    output = "Switched to #{env_data[:name]} (#{env_data[:desc]})".brown.bold
     if $options[:list]
       output = output.center(61).green.bold.reverse_color
     end

@@ -161,6 +161,9 @@
 - :desc: cr-wol-test
   :name: cr-wol-test
   :ip: 162.13.85.201
+- :desc: switch-wol-test
+  :name: switch-wol-test
+  :ip: 162.13.4.118
 - :desc: Your local machine
   :name: LOCALHOST
   :ip: 127.0.0.1
